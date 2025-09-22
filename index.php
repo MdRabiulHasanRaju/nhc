@@ -138,143 +138,12 @@
                                 <ul class="main-menu__list">
                                     <li class="dropdown megamenu">
                                         <a href="index.html">Home </a>
-                                        <ul>
-                                            <li>
-                                                <section class="home-showcase">
-                                                    <div class="container">
-                                                        <div class="home-showcase__inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-3">
-                                                                    <div class="home-showcase__item">
-                                                                        <div class="home-showcase__image">
-                                                                            <img src="assets/images/home-showcase/home-showcase-1-1.jpg"
-                                                                                alt="">
-                                                                            <div class="home-showcase__buttons">
-                                                                                <a href="index.html"
-                                                                                    class="thm-btn home-showcase__buttons__item">
-                                                                                    Multi Page
-                                                                                    <span
-                                                                                        class="icon-diagonal-arrow"></span>
-                                                                                </a>
-                                                                                <a href="index-one-page.html"
-                                                                                    class="thm-btn home-showcase__buttons__item">
-                                                                                    One Page
-                                                                                    <span
-                                                                                        class="icon-diagonal-arrow"></span>
-                                                                                </a>
-                                                                            </div>
-                                                                            <!-- /.home-showcase__buttons -->
-                                                                        </div><!-- /.home-showcase__image -->
-                                                                        <h3 class="home-showcase__title">Home
-                                                                            Page
-                                                                            01</h3>
-                                                                        <!-- /.home-showcase__title -->
-                                                                    </div><!-- /.home-showcase__item -->
-                                                                </div><!-- /.col-lg-3 -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="home-showcase__item">
-                                                                        <div class="home-showcase__image">
-                                                                            <img src="assets/images/home-showcase/home-showcase-1-2.jpg"
-                                                                                alt="">
-                                                                            <div class="home-showcase__buttons">
-                                                                                <a href="index2.html"
-                                                                                    class="thm-btn home-showcase__buttons__item">
-                                                                                    Multi Page
-                                                                                    <span
-                                                                                        class="icon-diagonal-arrow"></span>
-                                                                                </a>
-                                                                                <a href="index2-one-page.html"
-                                                                                    class="thm-btn home-showcase__buttons__item">
-                                                                                    One Page
-                                                                                    <span
-                                                                                        class="icon-diagonal-arrow"></span>
-                                                                                </a>
-                                                                            </div>
-                                                                            <!-- /.home-showcase__buttons -->
-                                                                        </div><!-- /.home-showcase__image -->
-                                                                        <h3 class="home-showcase__title">Home
-                                                                            Page
-                                                                            02
-                                                                        </h3><!-- /.home-showcase__title -->
-                                                                    </div><!-- /.home-showcase__item -->
-                                                                </div><!-- /.col-lg-3 -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="home-showcase__item">
-                                                                        <div class="home-showcase__image">
-                                                                            <img src="assets/images/home-showcase/home-showcase-1-3.jpg"
-                                                                                alt="">
-                                                                            <div class="home-showcase__buttons">
-                                                                                <a href="index3.html"
-                                                                                    class="thm-btn home-showcase__buttons__item">
-                                                                                    Multi Page
-                                                                                    <span
-                                                                                        class="icon-diagonal-arrow"></span>
-                                                                                </a>
-                                                                                <a href="index3-one-page.html"
-                                                                                    class="thm-btn home-showcase__buttons__item">
-                                                                                    View Page
-                                                                                    <span
-                                                                                        class="icon-diagonal-arrow"></span>
-                                                                                </a>
-                                                                            </div>
-                                                                            <!-- /.home-showcase__buttons -->
-                                                                        </div><!-- /.home-showcase__image -->
-                                                                        <h3 class="home-showcase__title">Home
-                                                                            Page
-                                                                            03
-                                                                        </h3><!-- /.home-showcase__title -->
-                                                                    </div><!-- /.home-showcase__item -->
-                                                                </div><!-- /.col-lg-3 -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="home-showcase__item">
-                                                                        <div class="home-showcase__image">
-                                                                            <img src="assets/images/home-showcase/home-showcase-1-4.jpg"
-                                                                                alt="">
-                                                                            <div class="home-showcase__buttons">
-                                                                                <a href="index-dark.html"
-                                                                                    class="thm-btn home-showcase__buttons__item">
-                                                                                    View
-                                                                                    <span
-                                                                                        class="icon-diagonal-arrow"></span>
-                                                                                </a>
-                                                                            </div>
-                                                                            <!-- /.home-showcase__buttons -->
-                                                                        </div><!-- /.home-showcase__image -->
-                                                                        <h3 class="home-showcase__title">Home Dark
-                                                                        </h3><!-- /.home-showcase__title -->
-                                                                    </div><!-- /.home-showcase__item -->
-                                                                </div><!-- /.col-lg-3 -->
-                                                            </div><!-- /.row -->
-                                                        </div><!-- /.home-showcase__inner -->
-
-                                                    </div><!-- /.container -->
-                                                </section>
-                                            </li>
-                                        </ul>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="about.html">About</a>
-                                    </li>
-                                    <!-- <li class="dropdown">
-                                        <a href="#">Pages</a>
-                                        <ul class="shadow-box">
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="projects.html">Projects</a></li>
-                                            <li><a href="projects-carousel.html">Projects Carousel</a></li>
-                                            <li><a href="project-details.html">Project Details</a></li>
-                                            <li><a href="testimonials.html">Testimonials</a></li>
-                                            <li><a href="testimonials-carousel.html">Testimonial Carousel</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="pricing-carousel.html">Pricing Carousel</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <li><a href="faq.html">FAQs</a></li>
-                                            <li><a href="404.html">404 Error</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>
                                     </li> -->
                                     <li class="dropdown">
-                                        <a href="#">Services</a>
+                                        <a href="#">Deep Cleaning</a>
                                         <ul class="shadow-box">
                                             <li><a href="services.html">Services</a></li>
                                             <li><a href="residential-cleaning.html">Residential Cleaning</a></li>
@@ -284,32 +153,26 @@
                                             <li><a href="sanitizing-mopping.html">Sanitizing & Mopping</a></li>
                                         </ul>
                                     </li>
-                                    <!-- <li class="dropdown">
-                                        <a href="#">Shop</a>
-                                        <ul class="shadow-box">
-                                            <li class="dropdown">
-                                                <a href="#">Products</a>
-                                                <ul>
-                                                    <li><a href="products-left.html">Left Sidebar</a></li>
-                                                    <li><a href="products-right.html">Right Sidebar</a></li>
-                                                    <li><a href="products.html">No Sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="product-details.html">Product Details</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                            <li><a href="sign-up.html">Sign Up</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                        </ul>
-                                    </li> -->
                                     <li class="dropdown">
-                                        <a href="#">Blog</a>
+                                        <a href="#">Cleaning Services</a>
                                         <ul class="shadow-box">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-carousel.html">Blog Carousel</a></li>
-                                            <li><a href="blog-list.html">Blog List</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="residential-cleaning.html">Residential Cleaning</a></li>
+                                            <li><a href="commercial-cleaning.html">Commercial Cleaning</a></li>
+                                            <li><a href="deep-cleaning.html">Deep Cleaning</a></li>
+                                            <li><a href="office-cleaning.html">Office Cleaning</a></li>
+                                            <li><a href="sanitizing-mopping.html">Sanitizing & Mopping</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Painting Services</a>
+                                        <ul class="shadow-box">
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="residential-cleaning.html">Residential Cleaning</a></li>
+                                            <li><a href="commercial-cleaning.html">Commercial Cleaning</a></li>
+                                            <li><a href="deep-cleaning.html">Deep Cleaning</a></li>
+                                            <li><a href="office-cleaning.html">Office Cleaning</a></li>
+                                            <li><a href="sanitizing-mopping.html">Sanitizing & Mopping</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -328,7 +191,7 @@
                                 </div>
                                 <div class="main-menu__btn-box">
                                     <div class="main-menu__btn">
-                                        <a href="contact.html"> <span class="icon-customer-support"></span> Book
+                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=971526503468"> <span class="icon-customer-support"></span> Book
                                             Schedule</a>
                                     </div>
                                 </div>
@@ -364,15 +227,15 @@
                     <div class="col-xl-6">
                         <div class="banner-one__left">
                             <div class="banner-one__title-box">
-                                <h2 class="banner-one__title">Making Your Space Shine Easy and <br>
+                                <h2 class="banner-one__title">Deep Cleaning That Makes Every Space Shine <br>
                                     <span class="typed-effect banner-one__title-color" id="type-1"
-                                        data-strings="Reliable Cleaning Services!, Making Every Space Shine"></span>
+                                        data-strings="Trusted Deep Cleaning Experts!, Spotless Homes and Offices!"></span>
                                 </h2>
                             </div>
                             <p class="banner-one__text">Experience hassle-free, top-quality cleaning services designed
                                 to keep <br> your home or office spotless and stress-free.</p>
                             <div class="banner-one__btn-box">
-                                <a href="contact.html" class="thm-btn">Book Now<span><i
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=971526503468" class="thm-btn">Book Now<span><i
                                             class="icon-diagonal-arrow"></i></span></a>
                             </div>
                             <div class="banner-one__satisfied-partner">
@@ -520,11 +383,10 @@
                                     </div>
                                     <span class="section-title__tagline">About Us</span>
                                 </div>
-                                <h2 class="section-title__title title-animation">Crafting Dreams, Guided by Purpose,
-                                    Rooted in Creativity, <span>& Values That Define Our Journey</span></h2>
+                                <h2 class="section-title__title title-animation">Professional Deep Cleaning Services <span>in Dubai You Can Rely On</span></h2>
                             </div>
-                            <p class="about-one__text">Driven by purpose and creativity, we craft dreams, stay rooted in
-                                innovation, and uphold values that define our journey forward.</p>
+                            <p class="about-one__text">NHC Cleaning and Technical is your trusted deep cleaning partner for spotless spaces where quality meets care. 
+                            Specializing in deep cleaning, we help Dubai residents and businesses enjoy healthier, fresher spaces every day.</p>
                             <div class="about-one__client-box">
                                 <div class="about-one__client-img-box">
                                     <div class="about-one__client-img">
@@ -533,8 +395,8 @@
                                 </div>
                                 <div class="about-one__client-content">
                                     <h5 class="about-one__title">Inspiring Growth and Innovation</h5>
-                                    <p class="about-one__client-text">It’s an honor to stand before you today as we
-                                        reflect on our journey and envision the path ahead.</p>
+                                    <p class="about-one__client-text">At NHC Cleaning and Technical Services, we’re proud of how far we’ve come and excited for what lies ahead. Let’s keep dreaming big, working together, and making every space cleaner and better for everyone.</p>
+
                                     <p class="about-one__sub-title">Our CEO <span>Abu Sayed</span></p>
                                     <p class="about-one__client-text-2">Let’s continue to dream big, act boldly - Thank
                                         you.</p>
@@ -546,19 +408,19 @@
                                         <div class="icon">
                                             <span class="icon-star-1"></span>
                                         </div>
-                                        <p>Build trust through reliability</p>
+                                        <p>Top Deep Cleaning Service in Dubai</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-star-1"></span>
                                         </div>
-                                        <p>Use eco-friendly cleaning solutions</p>
+                                        <p>Comprehensive Cleaning & Technical Solutions</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-star-1"></span>
                                         </div>
-                                        <p>Ensure customer satisfaction</p>
+                                        <p>Residential & Commercial Specialists</p>
                                     </li>
                                 </ul>
                                 <ul class="about-one__points-list list-unstyled">
@@ -566,19 +428,19 @@
                                         <div class="icon">
                                             <span class="icon-star-1"></span>
                                         </div>
-                                        <p>Top-quality cleaning services</p>
+                                        <p>Immediate 24/ 7 emergency services</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-star-1"></span>
                                         </div>
-                                        <p>Build trust through reliability </p>
+                                        <p>Dedicated to Quality & Hygiene</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-star-1"></span>
                                         </div>
-                                        <p>Create healthy, spotless spaces</p>
+                                        <p>Advanced Cleaning Techniques</p>
                                     </li>
                                 </ul>
                             </div>
@@ -588,7 +450,7 @@
                                 </div>
                                 <div class="content">
                                     <h3>Our Mission & Vision</h3>
-                                    <p>delivering exceptional cleaning services to<br> create spotless</p>
+                                    <p>Providing professional deep cleaning services to create spotless, hygienic, and welcoming spaces for homes and businesses in Dubai.</p>
                                 </div>
                             </div>
                         </div>
@@ -623,16 +485,14 @@
                                         </div>
                                         <span class="section-title__tagline">Services</span>
                                     </div>
-                                    <h2 class="section-title__title title-animation">Sparkling Spaces, Happy Faces
-                                        <span>Your Trusted Cleaning!</span></h2>
+                                    <h2 class="section-title__title title-animation">Where Cleanliness Meets Happiness
+                                        <span>Your Deep Cleaning Experts</span></h2>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6">
                             <div class="services-one__top-right">
-                                <p class="services-one__top-text">We are passionate about delivering exceptional<br>
-                                    cleaning services to create spotless, comfortable <br>spaces for homes and
-                                    businesses.
+                                <p class="services-one__top-text">We are passionate about providing exceptional cleaning services, creating spotless and comfortable spaces for both homes and businesses.
                                 </p>
                             </div>
                         </div>
@@ -656,7 +516,7 @@
                                             <span class="icon-trophy"></span>
                                         </div>
                                         <div class="services-one__experience-content">
-                                            <p><span class="odometer" data-count="25">00</span> <span>+ Years</span>
+                                            <p><span class="odometer" data-count="5">00</span> <span>+ Years</span>
                                                 <br> of
                                                 Work Experience</p>
                                         </div>

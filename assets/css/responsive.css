@@ -1343,6 +1343,7 @@
 
     .about-one__left-img-box {
         margin-right: 0;
+        display: none;
     }
 
     .about-one__left-img-box-2 {
@@ -1354,6 +1355,7 @@
         font-size: 50px;
         line-height: 50px;
         margin-top: 40px;
+        margin-left: 0px;
         margin-bottom: 40px;
     }
 
