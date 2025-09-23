@@ -43,8 +43,9 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <!-- <span class="last-icon icon-star"></span> -->
                                 </div>
                                 <p class="testimonial-one__date">10 Days Ago</p>
                             </div>
@@ -74,10 +75,11 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <!-- <span class="last-icon icon-star"></span> -->
                                 </div>
-                                <p class="testimonial-one__date">10 Days Ago</p>
+                                <p class="testimonial-one__date">21 Days Ago</p>
                             </div>
                         </div>
                     </li>
@@ -104,10 +106,11 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <!-- <span class="last-icon icon-star"></span> -->
                                 </div>
-                                <p class="testimonial-one__date">10 Days Ago</p>
+                                <p class="testimonial-one__date">15 Days Ago</p>
                             </div>
                         </div>
                     </li>
@@ -135,10 +138,11 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <!-- <span class="last-icon icon-star"></span> -->
                                 </div>
-                                <p class="testimonial-one__date">10 Days Ago</p>
+                                <p class="testimonial-one__date">14 Days Ago</p>
                             </div>
                         </div>
                     </li>
@@ -167,10 +171,11 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <!-- <span class="last-icon icon-star"></span> -->
                                 </div>
-                                <p class="testimonial-one__date">10 Days Ago</p>
+                                <p class="testimonial-one__date">13 Days Ago</p>
                             </div>
                         </div>
                     </li>
@@ -198,10 +203,11 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <!-- <span class="last-icon icon-star"></span> -->
                                 </div>
-                                <p class="testimonial-one__date">10 Days Ago</p>
+                                <p class="testimonial-one__date">25 Days Ago</p>
                             </div>
                         </div>
                     </li>
@@ -229,10 +235,11 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <!-- <span class="last-icon icon-star"></span> -->
                                 </div>
-                                <p class="testimonial-one__date">10 Days Ago</p>
+                                <p class="testimonial-one__date">18 Days Ago</p>
                             </div>
                         </div>
                     </li>
@@ -260,10 +267,11 @@
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
                                     <span class="icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
-                                    <span class="last-icon icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <!-- <span class="last-icon icon-star"></span> -->
                                 </div>
-                                <p class="testimonial-one__date">10 Days Ago</p>
+                                <p class="testimonial-one__date">26 Days Ago</p>
                             </div>
                         </div>
                     </li>
