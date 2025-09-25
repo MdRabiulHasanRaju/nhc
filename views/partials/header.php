@@ -57,10 +57,10 @@ $format = new Format;
 
 
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<?=LINK;?>assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="<?=LINK;?>assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?=LINK;?>assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="<?=LINK;?>assets/images/favicons/site.webmanifest" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,46 +73,48 @@ $format = new Format;
         rel="stylesheet">
 
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/custom-animate.css" />
-    <link rel="stylesheet" href="assets/css/swiper.min.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome-all.css" />
-    <link rel="stylesheet" href="assets/css/jarallax.css" />
-    <link rel="stylesheet" href="assets/css/jquery.magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/odometer.min.css" />
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="assets/css/nice-select.css" />
-    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/css/aos.css" />
-    <link rel="stylesheet" href="assets/css/twentytwenty.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/animate.min.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/custom-animate.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/font-awesome-all.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/jarallax.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/flaticon.css">
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/nice-select.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/aos.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/twentytwenty.css" />
 
 
-    <link rel="stylesheet" href="assets/css/module-css/banner.css" />
-    <link rel="stylesheet" href="assets/css/module-css/slider.css" />
-    <link rel="stylesheet" href="assets/css/module-css/footer.css" />
-    <link rel="stylesheet" href="assets/css/module-css/sliding-text.css" />
-    <link rel="stylesheet" href="assets/css/module-css/about.css" />
-    <link rel="stylesheet" href="assets/css/module-css/services.css" />
-    <link rel="stylesheet" href="assets/css/module-css/counter.css" />
-    <!-- <link rel="stylesheet" href="assets/css/module-css/before-and-after.css" /> -->
-    <!-- <link rel="stylesheet" href="assets/css/module-css/office-location.css" /> -->
-    <!-- <link rel="stylesheet" href="assets/css/module-css/pricing.css" /> -->
-    <!-- <link rel="stylesheet" href="assets/css/module-css/blog.css" /> -->
-    <!-- <link rel="stylesheet" href="assets/css/module-css/newsletter.css" /> -->
-    <!-- <link rel="stylesheet" href="assets/css/module-css/why-choose.css" /> -->
-    <!-- <link rel="stylesheet" href="assets/css/module-css/process.css" /> -->
-    <link rel="stylesheet" href="assets/css/module-css/project.css" />
-    <!-- <link rel="stylesheet" href="assets/css/module-css/brand.css" /> -->
-    <!-- <link rel="stylesheet" href="assets/css/module-css/contact.css" /> -->
-    <!-- <link rel="stylesheet" href="assets/css/module-css/team.css" /> -->
-    <link rel="stylesheet" href="assets/css/module-css/testimonial.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/banner.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/slider.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/footer.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/sliding-text.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/about.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/services.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/counter.css" />
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/before-and-after.css" /> -->
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/office-location.css" /> -->
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/pricing.css" /> -->
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/blog.css" /> -->
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/newsletter.css" /> -->
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/why-choose.css" /> -->
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/process.css" /> -->
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/project.css" />
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/brand.css" /> -->
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/contact.css" /> -->
+    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/team.css" /> -->
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/testimonial.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/page-header.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/faq.css" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/style.css" />
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/responsive.css" />
 </head>
 
 <body class="custom-cursor">
@@ -178,7 +180,7 @@ $format = new Format;
                         <div class="main-menu__wrapper-inner">
                             <div class="main-menu__left">
                                 <div class="main-menu__logo">
-                                    <a href="<?=LINK;?>"><img src="assets/images/resources/logo-1.png" alt=""></a>
+                                    <a href="<?=LINK;?>"><img src="<?=LINK;?>assets/images/resources/logo-1.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="main-menu__main-menu-box">

@@ -1,9 +1,9 @@
  <!--Site Footer Start-->
         <footer class="site-footer">
             <div class="site-footer__shape-bg float-bob-y"
-                style="background-image: url(assets/images/shapes/site-footer-shpae-bg.png);"></div>
+                style="background-image: url(<?=LINK;?>assets/images/shapes/site-footer-shpae-bg.png);"></div>
             <div class="site-footer__shape-2 img-bounce">
-                <img src="assets/images/shapes/site-footer-shape-2.png" alt="">
+                <img src="<?=LINK;?>assets/images/shapes/site-footer-shape-2.png" alt="">
             </div>
             <div class="container">
                 <div class="site-footer__inner">
@@ -14,7 +14,7 @@
                                     <div class="site-footer__logo-box">
                                         <div class="site-footer__logo">
                                             <a href="index.html"><img
-                                                    src="assets/images/resources/site-footer-logo-1.png" alt=""></a>
+                                                    src="<?=LINK;?>assets/images/resources/site-footer-logo-1.png" alt=""></a>
                                         </div>
                                         <p class="site-footer__text-1">We are passionate about delivering exceptional cleaning services to create spotless, comfortable spaces for homes and
                                             businesses.</p>
@@ -68,11 +68,11 @@
                                 <div class="site-footer__top-right">
                                     <div class="site-footer__top-right-heading-box">
                                         <div class="site-footer__shape-1 float-bob-x">
-                                            <img src="assets/images/shapes/site-footer-shape-1.png" alt="">
+                                            <img src="<?=LINK;?>assets/images/shapes/site-footer-shape-1.png" alt="">
                                         </div>
                                         <h3 class="site-footer__top-right-heading-title">Collaborating with you to deliver cleaning excellence.</h3>
                                         <div class="site-footer__top-right-heading-img">
-                                            <img src="assets/images/resources/site-footer-top-right-heading-img.png"
+                                            <img src="<?=LINK;?>assets/images/resources/site-footer-top-right-heading-img.png"
                                                 alt="">
                                         </div>
                                     </div>
@@ -211,7 +211,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="<?=LINK;?>" aria-label="logo image"><img src="assets/images/resources/logo-2.png" width="150"
+                <a href="<?=LINK;?>" aria-label="logo image"><img src="<?=LINK;?>assets/images/resources/logo-2.png" width="150"
                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
@@ -263,44 +263,44 @@
     </a>
 
 
-    <script src="assets/js/jquery-latest.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jarallax.min.js"></script>
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/js/jquery.appear.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/wNumb.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/twentytwenty.js"></script>
-    <script src="assets/js/jquery.event.move.js"></script>
-    <script src="assets/js/marquee.min.js"></script>
-    <script src="assets/js/jquery.circleType.js"></script>
-    <script src="assets/js/jquery.fittext.js"></script>
-    <script src="assets/js/jquery.lettering.min.js"></script>
-    <script src="assets/js/typed-2.0.11.js"></script>
-    <script src="assets/js/jquery-sidebar-content.js"></script>
-    <script src="assets/js/countdown.min.js"></script>
-    <script src="assets/js/aos.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery-latest.js"></script>
+    <script src="<?=LINK;?>assets/js/bootstrap.bundle.min.js"></script>
+    <script src="<?=LINK;?>assets/js/jarallax.min.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery.appear.min.js"></script>
+    <script src="<?=LINK;?>assets/js/swiper.min.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery.validate.min.js"></script>
+    <script src="<?=LINK;?>assets/js/odometer.min.js"></script>
+    <script src="<?=LINK;?>assets/js/wNumb.min.js"></script>
+    <script src="<?=LINK;?>assets/js/wow.js"></script>
+    <script src="<?=LINK;?>assets/js/isotope.js"></script>
+    <script src="<?=LINK;?>assets/js/owl.carousel.min.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery-ui.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery.nice-select.min.js"></script>
+    <script src="<?=LINK;?>assets/js/twentytwenty.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery.event.move.js"></script>
+    <script src="<?=LINK;?>assets/js/marquee.min.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery.circleType.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery.fittext.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery.lettering.min.js"></script>
+    <script src="<?=LINK;?>assets/js/typed-2.0.11.js"></script>
+    <script src="<?=LINK;?>assets/js/jquery-sidebar-content.js"></script>
+    <script src="<?=LINK;?>assets/js/countdown.min.js"></script>
+    <script src="<?=LINK;?>assets/js/aos.js"></script>
 
 
 
 
-    <script src="assets/js/gsap/gsap.js"></script>
-    <script src="assets/js/gsap/ScrollTrigger.js"></script>
-    <script src="assets/js/gsap/SplitText.js"></script>
+    <script src="<?=LINK;?>assets/js/gsap/gsap.js"></script>
+    <script src="<?=LINK;?>assets/js/gsap/ScrollTrigger.js"></script>
+    <script src="<?=LINK;?>assets/js/gsap/SplitText.js"></script>
 
 
 
 
     <!-- template js -->
-    <script src="assets/js/script.js"></script>
+    <script src="<?=LINK;?>assets/js/script.js"></script>
 </body>
 
 </html>
