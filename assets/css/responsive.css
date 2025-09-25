@@ -2767,6 +2767,12 @@
     .sidebar-order-summary {
         padding: 37px 20px 45px;
     }
+    .project-one__filter li p{
+        font-size: 12px;
+    }
+    .project-one{
+        padding: 83px 0 83px;
+    }
 
 
 
@@ -3339,6 +3345,7 @@
     .banner-one__left {
         margin-top: 0px;
         margin-right: 0;
+        padding-bottom: 40px;
     }
 
     .banner-one__title {
@@ -3362,6 +3369,7 @@
     .banner-one__right {
         margin-left: 0;
         margin-top: 50px;
+        display: none;
     }
 
     .banner-one__google-rating {

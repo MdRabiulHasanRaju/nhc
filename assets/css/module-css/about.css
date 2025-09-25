@@ -4,10 +4,12 @@
 .about-one {
     position: relative;
     display: block;
-    padding: 94px 0 83px;
+    padding: 15px 0 45px;
     z-index: 1;
 }
-
+p.about-one__text {
+    margin-bottom: 15px;
+}
 .about-one__bg-color {
     position: absolute;
     top: 130px;
@@ -289,7 +291,8 @@
 }
 
 .about-one__right .section-title {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .about-one__client-box {
