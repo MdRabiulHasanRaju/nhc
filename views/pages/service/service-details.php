@@ -6,15 +6,19 @@ $header_active = "Home";
 
 include "../../partials/header.php";
 ?>
+
+<style>
+    .main-header {
+        position: relative;
+    }
+</style>
         <!--Page Header Start-->
         <section class="page-header">
             <div class="page-header__bg" style="background-image: url(<?=LINK;?>assets/images/backgrounds/page-header-bg.jpg);">
             </div>
             <div class="page-header__social">
-                <a href="#">LinkedIn</a>
-                <a href="#">Pinterest</a>
-                <a href="#">twitter-x</a>
-                <a href="#">facebook</a>
+                <a href="#">Whatsapp</a>
+                <a href="#">Call Now</a>
             </div>
             <div class="container">
                 <div class="page-header__inner">
@@ -245,7 +249,7 @@ include "../../partials/header.php";
                                     </div>
                                     <div class="project-details__call-content">
                                         <p>Call Us To Take this services</p>
-                                        <a href="tel:12004567894">+12 (00) 456 7894</a>
+                                        <a href="tel:+971526503468">+971 52 650 3468</a>
                                     </div>
                                 </div>
                             </div>

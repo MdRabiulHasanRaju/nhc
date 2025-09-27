@@ -31,7 +31,7 @@
                                     <p class="testimonial-one__client-sub-title">Business Owner</p>
                                 </div>
                                 <div class="testimonial-one__client-img">
-                                    <img src="assets/images/testimonial/testimonial-1-1.jpg" alt="">
+                                    <img src="assets/images/testimonial/testimonial-client.png" alt="">
                                 </div>
                             </div>
                             <span class="testimonial-one__sub-title">Worth every penny!</span>
@@ -63,7 +63,7 @@
                                     <p class="testimonial-one__client-sub-title">Financial Analyst</p>
                                 </div>
                                 <div class="testimonial-one__client-img">
-                                    <img src="assets/images/testimonial/testimonial-1-2.jpg" alt="">
+                                    <img src="assets/images/testimonial/testimonial-client.png" alt="">
                                 </div>
                             </div>
                             <span class="testimonial-one__sub-title">Efficient and reliable!</span>
@@ -95,7 +95,7 @@
                                     <p class="testimonial-one__client-sub-title">Marketing Manager</p>
                                 </div>
                                 <div class="testimonial-one__client-img">
-                                    <img src="assets/images/testimonial/testimonial-1-3.jpg" alt="">
+                                    <img src="assets/images/testimonial/testimonial-client.png" alt="">
                                 </div>
                             </div>
                             <span class="testimonial-one__sub-title">Spotless results every time!</span>
@@ -126,7 +126,7 @@
                                     <p class="testimonial-one__client-sub-title">Software Developer </p>
                                 </div>
                                 <div class="testimonial-one__client-img">
-                                    <img src="assets/images/testimonial/testimonial-1-4.jpg" alt="">
+                                    <img src="assets/images/testimonial/testimonial-client.png" alt="">
                                 </div>
                             </div>
                             <span class="testimonial-one__sub-title">A true lifesaver!</span>
@@ -160,7 +160,7 @@
                                     <p class="testimonial-one__client-sub-title">Marketing Manager</p>
                                 </div>
                                 <div class="testimonial-one__client-img">
-                                    <img src="assets/images/testimonial/testimonial-1-5.jpg" alt="">
+                                    <img src="assets/images/testimonial/testimonial-client.png" alt="">
                                 </div>
                             </div>
                             <span class="testimonial-one__sub-title">Spotless results every time!</span>
@@ -191,7 +191,7 @@
                                     <p class="testimonial-one__client-sub-title">Business Owner</p>
                                 </div>
                                 <div class="testimonial-one__client-img">
-                                    <img src="assets/images/testimonial/testimonial-1-6.jpg" alt="">
+                                    <img src="assets/images/testimonial/testimonial-client.png" alt="">
                                 </div>
                             </div>
                             <span class="testimonial-one__sub-title">Worth every penny!</span>
@@ -223,7 +223,7 @@
                                     <p class="testimonial-one__client-sub-title">Financial Analyst</p>
                                 </div>
                                 <div class="testimonial-one__client-img">
-                                    <img src="assets/images/testimonial/testimonial-1-7.jpg" alt="">
+                                    <img src="assets/images/testimonial/testimonial-client.png" alt="">
                                 </div>
                             </div>
                             <span class="testimonial-one__sub-title">Efficient and reliable!</span>
@@ -255,7 +255,7 @@
                                     <p class="testimonial-one__client-sub-title">Financial Analyst</p>
                                 </div>
                                 <div class="testimonial-one__client-img">
-                                    <img src="assets/images/testimonial/testimonial-1-8.jpg" alt="">
+                                    <img src="assets/images/testimonial/testimonial-client.png" alt="">
                                 </div>
                             </div>
                             <span class="testimonial-one__sub-title">Efficient and reliable!</span>
