@@ -1,39 +1,160 @@
 <?php ob_start();
-$title= "Best Deep Cleaning Services in Dubai | NHC Cleaning and Technical";
-$meta_description = "Best Deep Cleaning Services Company in Dubai | NHC Cleaning and Technical - We provides the top-notch villa deep cleaning services all across Dubai. Our clients are 100% satisfied with our work. Call us now +971 52 650 3468";
-$meta_keywords = "NHC Cleaning and Technical,Best Deep Cleaning Services in Dubai";
-$header_active = "Home";
+session_start();
+
+if ($_GET['service_title'] || $_GET['category_name']) {
+    $category_name = str_replace("-", " ", $_GET['category_name']);
+    $service_title = str_replace("-", " ", $_GET['service_title']);
+    
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/nhc/lib/Database.php";
+    
+    $notFound = false;
+    $service_sql = "select * from services where title='$service_title'";
+    $service_stmt = mysqli_query($connection, $service_sql);
+    if (mysqli_num_rows($service_stmt) == 1) {
+        $service_result = mysqli_fetch_assoc($service_stmt);
+    }else{
+        $notFound = true;
+    }
+
+    $title = "$service_title | NHC Cleaning";
+    
+    $meta_description = isset($service_result['meta_description'])?$service_result['meta_description']:'deep cleaning services in dubai';
+    
+    $meta_keywords = isset($service_result['meta_keyword'])?$service_result['meta_keyword']:$title;
+    
+    $meta_title=isset($service_result['meta_title'])?$service_result['meta_title']:$title;
+
 
 include "../../partials/header.php";
+    if($notFound == true) {
+        header("location:" . LINK . "404");
+        die();
+    }
+} else {
+    header("location:" . LINK . "404");
+    die();
+}
+$header_active = "Services";
 ?>
 
+
+
 <style>
+:root, [data-bs-theme=light]{--bs-primary-bg-subtle: #f0f0f0;}
     .main-header {
         position: relative;
+    }
+
+    .services-details__left h2 {
+        color: #54595F;
+        font-weight: bold;
+    }
+
+    .services-details__left p {
+        color: #888;
+        opacity: 0.9;
+        padding: 10px 0 !important;
+    }
+
+    .services-details__left ul {
+        color: #888;
+        opacity: 0.9;
+        padding: 20px 0 !important;
+    }
+
+    .services-details__left ul li {
+        color: #54595F;
+        padding-bottom: 10px !important;
+        list-style: inside;
+    }
+    .services-details__left ol li {
+        list-style: auto;
+    }
+    .services-image-div {
+        padding: 20px 0 !important;
+    }
+    .services-details__left img{
+        width:100%;
+        height:auto;
+    }
+    
+    /*for ckeditor*/
+    figure.table {
+        display: flex;
+        justify-content: center;
+    }
+    figure.table td p {
+        color:black;
+        padding:0!important;
+    }
+    td {
+        padding: 0px 30px;
+        border: 1px solid black;
+    }
+    tr{
+        border-bottom:none;
+    }
+    .text-small {
+        font-size: 14px;
+    }
+    .text-tiny {
+        font-size: 11px;
+    }
+    .raw-html-embed{
+        display:flex;
+        justify-content:center;
+    }
+    .faq-one {
+     padding: 30px 0 40px;
+    }
+    @media screen and (max-width:600px) {
+        html, body {
+          overflow-x: hidden;
+        }
+        .service-details-row{
+            flex-direction: column-reverse;
+        }
+        figure.table {
+            display: block;
+            overflow-x: scroll;
+        }
+        .text-small {
+            font-size: 12px;
+        }
+        .text-tiny {
+            font-size: 10px;
+        }
+        .services-details {
+            padding: 30px 0 0;
+        }
+        .page-header__inner h1 {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 </style>
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header__bg" style="background-image: url(<?=LINK;?>assets/images/backgrounds/page-header-bg.jpg);">
+            <div class="page-header__bg" style="background-image: url('<?=LINK;?>assets/images/services/<?= $service_result['banner_image']; ?>');">
             </div>
             <div class="page-header__social">
-                <a href="#">Whatsapp</a>
-                <a href="#">Call Now</a>
+                <a href="https://api.whatsapp.com/send?phone=<?=$wp_api_number;?>">Whatsapp</a>
+                <a href="tel:+<?=$wp_api_number;?>">Call Now</a>
             </div>
             <div class="container">
                 <div class="page-header__inner">
-                    <div class="page-header__img-1">
-                        <img src="<?=LINK;?>assets/images/resources/page-header-img-1.jpg" alt="">
-                    </div>
-                    <h2>Residential Cleaning</h2>
+                    <h1><?= $service_result['title']; ?></h1>
                     <div class="thm-breadcrumb__box">
                         <ul class="thm-breadcrumb list-unstyled">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="<?=LINK;?>">Home</a></li>
                             <li><span class="icon-arrow-right"></span></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><span class="icon-arrow-right"></span></li>
-                            <li>Residential Cleaning</li>
+                            <li><?= $category_name; ?></li>
                         </ul>
+                    </div>
+                    <br><br>
+                    <div class="banner-one__btn-box">
+                                <a href="https://api.whatsapp.com/send?phone=<?=$wp_api_number;?>" class="thm-btn">Book Now<span><i
+                                            class="icon-diagonal-arrow"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -46,165 +167,8 @@ include "../../partials/header.php";
                 <div class="row">
                     <div class="col-xl-8 col-lg-7">
                         <div class="services-details__left">
-                            <h3 class="services-details__title-1">Enjoy a spotless home without lifting a finger. Our
-                                residential cleaning services include</h3>
-                            <p class="services-details__text-1">Comprehensive cleaning services tailored to your needs,
-                                including residential, commercial, deep cleaning, move-in/move-out, and specialty
-                                solutions. Our professional team ensures spotless results with eco-friendly products and
-                                flexible scheduling—guaranteeing your satisfaction every step of the way!</p>
-                            <div class="services-details__img-box">
-                                <div class="services-details__img">
-                                    <img src="<?=LINK;?>assets/images/services/services-details-img-1.jpg" alt="">
-                                </div>
-                            </div>
-                            <h3 class="services-details__title-2">Services Core Features</h3>
-                            <p class="services-details__text-2">"Professional cleaning services for homes, offices, and
-                                special occasions, including deep cleaning, move-in/move-out, and post-construction
-                                care. With flexible scheduling, eco-friendly products, and attention to detail, we
-                                ensure your space shines effortlessly!</p>
-                            <div class="services-details__points-box">
-                                <ul class="services-details__points list-unstyled">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-star-1"></span>
-                                        </div>
-                                        <p>Dusting and vacuuming</p>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-star-1"></span>
-                                        </div>
-                                        <p>Mopping and sweeping floors</p>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-star-1"></span>
-                                        </div>
-                                        <p>Commercial Cleaning</p>
-                                    </li>
-                                </ul>
-                                <ul class="services-details__points list-unstyled">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-star-1"></span>
-                                        </div>
-                                        <p>Sanitizing kitchens and bathrooms</p>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-star-1"></span>
-                                        </div>
-                                        <p>Organizing living spaces</p>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-star-1"></span>
-                                        </div>
-                                        <p>Window cleaning</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="services-details__service-single-box">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="services-details__services-single">
-                                            <div class="services-details__services-icon">
-                                                <span class="icon-cleaning-1"></span>
-                                            </div>
-                                            <h3 class="services-details__services-title">Commercial Cleaning</h3>
-                                            <p class="services-details__services-text">Create a clean and productive
-                                                work<br> environment with our commercial <br>cleaning solutions.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="services-details__services-single">
-                                            <div class="services-details__services-icon">
-                                                <span class="icon-sanitary"></span>
-                                            </div>
-                                            <h3 class="services-details__services-title">Deep Cleaning</h3>
-                                            <p class="services-details__services-text">Perfect for seasonal refreshes or
-                                                when<br> your space needs extra attention. Grout<br> and tile cleaning
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3 class="services-details__title-3">Specialty Cleaning summry</h3>
-                            <p class="services-details__text-3">Specialty cleaning refers to cleaning services or
-                                techniques tailored to address specific, often unique, cleaning needs. This type of
-                                cleaning is often used for environments, materials, or situations that require
-                                specialized expertise, tools, or products. Here are some common categories</p>
-                            <div class="services-details__img-box-2">
-                                <div class="row">
-                                    <div class="col-xl-6 col-md-6">
-                                        <div class="services-details__img-box-img-1">
-                                            <img src="<?=LINK;?>assets/images/services/services-details-img-box-img-1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-md-6">
-                                        <div class="services-details__img-box-img-1">
-                                            <img src="<?=LINK;?>assets/images/services/services-details-img-box-img-2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3 class="services-details__title-4">Why Choose Our Services?</h3>
-                            <p class="services-details__text-4">Choose us for experienced, professional cleaners,
-                                flexible scheduling, eco-friendly products, and a 100% satisfaction guarantee.</p>
-                            <p class="services-details__text-5">We deliver top-quality cleaning that leaves your space
-                                spotless and refreshed! We deliver top-quality cleaning that leaves your space spotless
-                                and refreshed!</p>
-                            <div class="services-details__points-and-img-box">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="services-details__points-3">
-                                            <ul class="services-details__points-list-3 list-unstyled">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-star-1"></span>
-                                                    </div>
-                                                    <p>Experienced and professional staff</p>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-star-1"></span>
-                                                    </div>
-                                                    <p>Flexible scheduling to fit your needs</p>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-star-1"></span>
-                                                    </div>
-                                                    <p>Eco-friendly products for a healthier environment</p>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-star-1"></span>
-                                                    </div>
-                                                    <p>100% satisfaction guarantee</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="services-details__points-img">
-                                            <img src="<?=LINK;?>assets/images/services/services-details-points-img.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="services-details__text-6">We deliver top-quality cleaning that leaves your space
-                                spotless and refreshed! We deliver top-quality cleaning that leaves your space spotless
-                                and refreshed!</p>
-                            <h3 class="services-details__title-5">Industrial and Commercial Cleaning.</h3>
-                            <p class="services-details__text-7">Carpet and Upholstery Cleaning: Specialized methods for
-                                cleaning delicate fabrics and carpets using techniques like steam cleaning, dry
-                                cleaning, or deep cleaning to remove dirt, stains, and allergens. Cleaning after
-                                building or renovation work, including removing dust, debris, and leftover materials to
-                                make spaces ready for use.</p>
-                            <div class="services-details__bottom-img">
-                                <img src="<?=LINK;?>assets/images/services/services-details-bottom-img.jpg" alt="">
-                            </div>
+                            <!-- <h3 class="services-details__title-1">Service Overview</h3> -->
+                            <?=$service_result['description'];?>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5">
@@ -212,35 +176,35 @@ include "../../partials/header.php";
                             <div class="services-details__service-list-box">
                                 <h3 class="services-details__service-list-title">More Services</h3>
                                 <ul class="services-details__service-list list-unstyled">
-                                    <li class="active">
-                                        <a href="residential-cleaning.html"><span
-                                                class="icon-diagonal-arrow"></span>Residential Cleaning</a>
+                                    <?php
+                                    $cat_sql = "select id,name from category where name='$category_name'";
+                                    $cat_stmt = mysqli_query($connection, $cat_sql);
+                                    $cat_result = mysqli_fetch_assoc($cat_stmt);
+                                    $cat_id = $cat_result['id'];
+                                    $cat_name = $cat_result['name'];
+
+                                    $service_cat_sql = "select title from services where category_id='$cat_id'";
+                                    $service_cat_stmt = mysqli_query($connection, $service_cat_sql);
+                                    while ($service_cat_result = mysqli_fetch_assoc($service_cat_stmt)) {
+
+                                        $category_name_link = $format->createServiceLink($cat_name);
+                                        $services_link = $format->createServiceLink($service_cat_result['title']);
+                                    ?>
+                                    <li class="<?= (strtolower($service_title) == strtolower($service_cat_result['title']) ? 'active' : '') ?>">
+                                        
+                                        <a href="<?=LINK;?><?=strtolower($category_name_link);?>/<?=strtolower($services_link);?>"><span
+                                                class="icon-diagonal-arrow"></span>
+                                            <?= $service_cat_result['title']; ?>
+                                        </a>
                                     </li>
-                                    <li>
-                                        <a href="commercial-cleaning.html"><span
-                                                class="icon-diagonal-arrow"></span>Commercial Cleaning</a>
-                                    </li>
-                                    <li>
-                                        <a href="deep-cleaning.html"><span class="icon-diagonal-arrow"></span>Deep
-                                            Cleaning</a>
-                                    </li>
-                                    <li>
-                                        <a href="office-cleaning.html"><span class="icon-diagonal-arrow"></span>Office
-                                            Cleaning</a>
-                                    </li>
-                                    <li>
-                                        <a href="sanitizing-mopping.html"><span
-                                                class="icon-diagonal-arrow"></span>Sanitizing & Mopping</a>
-                                    </li>
+                                    <?php } ?>
+                                    
                                 </ul>
                             </div>
                             <div class="project-details__get-touch">
-                                <div class="project-details__get-touch-img-1">
-                                    <img src="<?=LINK;?>assets/images/project/project-details-get-touch-img-1.jpg" alt="">
-                                </div>
                                 <h3 class="project-details__get-touch-title">Feel free to reach out to us anytime.</h3>
                                 <div class="project-details__get-touch-btn-box">
-                                    <a href="contact.html" class="thm-btn">Contact Us<span><i
+                                    <a href="tel:+<?=$wp_api_number;?>" class="thm-btn">Contact Us<span><i
                                                 class="icon-diagonal-arrow"></i></span></a>
                                 </div>
                                 <div class="project-details__call-box">
@@ -249,7 +213,7 @@ include "../../partials/header.php";
                                     </div>
                                     <div class="project-details__call-content">
                                         <p>Call Us To Take this services</p>
-                                        <a href="tel:+971526503468">+971 52 650 3468</a>
+                                        <a href="tel:+<?=$wp_api_number;?>"><?=$contact_result['number']?></a>
                                     </div>
                                 </div>
                             </div>
@@ -261,6 +225,12 @@ include "../../partials/header.php";
         <!--Services Details End-->
 
         <!--Faq One Start -->
+        <?php
+            $service_id = $service_result['id'];
+            $items = "SELECT * FROM accordion_items WHERE service_id = $service_id";
+            $result = mysqli_query($connection, $items);
+            if(mysqli_num_rows($result)!=0){
+        ?>   
         <section class="faq-one">
             <div class="faq-one__shape-1 float-bob-y">
                 <img src="<?=LINK;?>assets/images/shapes/faq-one-shape-1.png" alt="">
@@ -288,27 +258,16 @@ include "../../partials/header.php";
                                         <span class="icon-star-1"></span>
                                     </div>
                                     <div class="text">
-                                        <p>A Comprehensive Guide to Our Frequently Asked <br> Questions</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-star-1"></span>
-                                    </div>
-                                    <div class="text">
                                         <p>Find the Information You’re Looking For</p>
                                     </div>
                                 </li>
                             </ul>
                             <div class="faq-one__contact-box">
-                                <div class="faq-one__contact-img">
-                                    <img src="<?=LINK;?>assets/images/resources/faq-one-contact-img.png" alt="">
-                                </div>
                                 <div class="faq-one__contact-big-text">Get In Touch</div>
                                 <h3 class="faq-one__contact-title">If you have any other <br> questions, please contact
                                     <br> us here</h3>
                                 <div class="faq-one__btn-box">
-                                    <a href="contact.html" class="thm-btn">Contact Us<span><i
+                                    <a href="tel:+<?=$wp_api_number;?>" class="thm-btn">Contact Us<span><i
                                                 class="icon-diagonal-arrow"></i></span></a>
                                 </div>
                             </div>
@@ -317,68 +276,27 @@ include "../../partials/header.php";
                     <div class="col-xl-6">
                         <div class="faq-one__right">
                             <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                <div class="accrodion">
+                            <?php $index=0; while ($row = mysqli_fetch_assoc($result)) { ?>
+                                <div class="accrodion <?= $index == 0 ? 'active' : '' ?>">
                                     <div class="accrodion-title">
-                                        <h4>What types of cleaning services do you offer?</h4>
+                                        <h4><?= htmlspecialchars($row['title']) ?></h4>
                                     </div>
                                     <div class="accrodion-content">
                                         <div class="inner">
-                                            <p>Yes, we use eco-friendly and non-toxic cleaning products to ensure safety
-                                                for your family, pets, and the environment. You can schedule a cleaning
-                                                by calling us, booking online, or using our mobile app for flexible and
-                                                convenient scheduling.
+                                            <p><?= nl2br(htmlspecialchars($row['content'])) ?>
                                             </p>
                                         </div><!-- /.inner -->
                                     </div>
                                 </div>
-                                <div class="accrodion active">
-                                    <div class="accrodion-title">
-                                        <h4>Are your cleaning products eco-friendly?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>Yes, we use eco-friendly and non-toxic cleaning products to ensure safety
-                                                for your family, pets, and the environment. You can schedule a cleaning
-                                                by calling us, booking online, or using our mobile app for flexible and
-                                                convenient scheduling.
-                                            </p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>Do I need to be home during the cleaning service?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>Yes, we use eco-friendly and non-toxic cleaning products to ensure safety
-                                                for your family, pets, and the environment. You can schedule a cleaning
-                                                by calling us, booking online, or using our mobile app for flexible and
-                                                convenient scheduling.
-                                            </p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4>What if I’m not satisfied with the cleaning service?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>Yes, we use eco-friendly and non-toxic cleaning products to ensure safety
-                                                for your family, pets, and the environment. You can schedule a cleaning
-                                                by calling us, booking online, or using our mobile app for flexible and
-                                                convenient scheduling.
-                                            </p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
+                            <?php $index++; } ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <?php } ?>
         <!--Faq One End -->
 
 

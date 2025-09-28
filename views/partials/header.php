@@ -16,6 +16,14 @@ if (!isset($baseurl)) {
 
 include $_SERVER['DOCUMENT_ROOT'] . "/nhc/utility/Format.php";
 $format = new Format;
+
+
+$contact_sql = "select address,number,email from contact";
+$contact_stmt = mysqli_query($connection, $contact_sql);
+$contact_result = mysqli_fetch_assoc($contact_stmt);
+$contact_number = str_replace(" ", "", $contact_result['number']);
+$wp_api_number = str_replace("+", "", $contact_number);
+
 ?>
 
 <!DOCTYPE html>
@@ -106,7 +114,7 @@ $format = new Format;
     <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/process.css" /> -->
     <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/project.css" />
     <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/brand.css" /> -->
-    <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/contact.css" /> -->
+    <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/contact.css" />
     <!-- <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/team.css" /> -->
     <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/testimonial.css" />
     <link rel="stylesheet" href="<?=LINK;?>assets/css/module-css/page-header.css" />
@@ -119,8 +127,8 @@ $format = new Format;
 
 <body class="custom-cursor">
 
-    <!-- <div class="custom-cursor__cursor"></div>
-    <div class="custom-cursor__cursor-two"></div> -->
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
 
     <!--Start Preloader-->
     <!-- <div class="loader js-preloader">
@@ -141,7 +149,10 @@ $format = new Format;
                                     <i class="icon-mail"></i>
                                 </div>
                                 <div class="text">
-                                    <p><a href="mailto:info@nhccleaningandtechnical.com">info@nhccleaningandtechnical.com</a>
+                                    <p>
+                                        <a href="mailto:<?=$contact_result['email'];?>">
+                                            <?=$contact_result['email'];?>
+                                        </a>
                                     </p>
                                 </div>
                             </li>
@@ -150,7 +161,11 @@ $format = new Format;
                                     <i class="icon-phone-call"></i>
                                 </div>
                                 <div class="text">
-                                    <p><a href="tel:+971526503468">+971 52 650 3468</a></p>
+                                    <p>
+                                        <a href="tel:+<?=$wp_api_number?>">
+                                                <?=$contact_result['number']?>
+                                        </a>
+                                    </p>
                                 </div>
                             </li>
                             <li>
@@ -158,7 +173,7 @@ $format = new Format;
                                     <i class="icon-pin-1"></i>
                                 </div>
                                 <div class="text">
-                                    <p>Level 4, One JLT Tower 1 ,Jumeirah Lake Towers - Dubai</p>
+                                    <p><?=$contact_result['address'];?></p>
                                 </div>
                             </li>
                         </ul>
@@ -189,62 +204,54 @@ $format = new Format;
                                     <li class="dropdown megamenu">
                                         <a href="<?=LINK;?>">Home </a>
                                     </li>
-                                    <!-- <li>
-                                        <a href="about.html">About</a>
-                                    </li> -->
+
+                                    <?php
+                                    $cat_sql = "select * from category";
+                                    $cat_stmt = mysqli_query($connection, $cat_sql);
+                                    while ($cat_result = mysqli_fetch_assoc($cat_stmt)) { ?>
+
+
                                     <li class="dropdown">
-                                        <a href="#">Deep Cleaning</a>
+                                        <a href="#"><?= $cat_result['name']; ?></a>
+                                        <?php
+                                        $cat_id = $cat_result['id'];
+                                        $services_sql = "select title from services where category_id='$cat_id'";
+                                        $services_stmt = mysqli_query($connection, $services_sql);
+                                        if (mysqli_num_rows($services_stmt) > 0) { ?>
+
                                         <ul class="shadow-box">
-                                            <li><a href="#">Deep Cleaning Services</a></li>
-                                            <li><a href="#">Villa Deep Cleaning</a></li>
-                                            <li><a href="#">Move In And Out Deep Cleaning</a></li>
-                                            <li><a href="#">Floor Deep Cleaning</a></li>
-                                            <li><a href="#">Office Deep Cleaning</a></li>
-                                            <li><a href="#">Sofa Shampoo Cleaning</a></li>
-                                            <li><a href="#">Kitchen Deep Cleaning</a></li>
-                                            <li><a href="#">Restaurant Deep Cleaning</a></li>
-                                            <li><a href="#">Restaurant Deep Cleaning</a></li>
-                                            <li><a href="#">Garage Deep Cleaning</a></li>
+                                            <?php
+                                                while ($services_result = mysqli_fetch_assoc($services_stmt)) {
+
+                                                $category_name_link = $format->createServiceLink($cat_result['name']);
+                                                $services_link = $format->createServiceLink($services_result['title']);
+                                            ?>
+
+                                            <li><a href="<?=LINK;?><?=strtolower($category_name_link);?>/<?=strtolower($services_link);?>"><?= $services_result['title']; ?></a></li>
+                                            <?php } ?>
+
                                         </ul>
+                                        <?php } ?>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">Cleaning Services</a>
-                                        <ul class="shadow-box">
-                                            <li><a href="#">Ac Duct Cleaning</a></li>
-                                            <li><a href="#">Residential Cleaning</a></li>
-                                            <li><a href="#">Commercial Cleaning</a></li>
-                                            <li><a href="#">Office Cleaning</a></li>
-                                            <li><a href="#">Sanitizing & Mopping</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Painting Services</a>
-                                        <ul class="shadow-box">
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Residential Cleaning</a></li>
-                                            <li><a href="#">Commercial Cleaning</a></li>
-                                            <li><a href="#">Deep Cleaning</a></li>
-                                            <li><a href="#">Office Cleaning</a></li>
-                                            <li><a href="#">Sanitizing & Mopping</a></li>
-                                        </ul>
-                                    </li>
+                                     <?php } ?>
+                                    
                                     <li>
-                                        <a href="#">Contact</a>
+                                        <a href="<?=LINK;?>contact">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="main-menu__right">
                                 <div class="main-menu__search-cart-box">
-                                    <div class="main-menu__search-box">
+                                    <!-- <div class="main-menu__search-box">
                                         <a href="#" class="main-menu__search searcher-toggler-box icon-search"></a>
-                                    </div>
+                                    </div> -->
                                     <!-- <div class="main-menu__cart">
                                         <a href="cart.html"><span class="fas fa-shopping-cart"></span></a>
                                     </div> -->
                                 </div>
                                 <div class="main-menu__btn-box">
                                     <div class="main-menu__btn">
-                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=971526503468"> <span class="icon-customer-support"></span> Book
+                                        <a target="_blank" href="https://api.whatsapp.com/send?phone=<?=$wp_api_number?>"> <span class="icon-customer-support"></span> Book
                                             Schedule</a>
                                     </div>
                                 </div>

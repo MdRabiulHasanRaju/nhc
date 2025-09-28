@@ -27,7 +27,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(5, 23, 61, 0.50) 0%, rgba(0, 37, 114, 0.9) 100%);
+    background: linear-gradient(180deg, rgb(0 0 0 / 50%) 0%, rgb(69 69 69 / 81%) 100%);
 }
 
 .page-header__social {
@@ -95,7 +95,7 @@
     border-radius: 50%;
 }
 
-.page-header__inner h2 {
+.page-header__inner h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 66px;

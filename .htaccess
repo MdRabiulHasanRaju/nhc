@@ -1,0 +1,64 @@
+
+RewriteEngine ON
+
+ErrorDocument 404 /views/error/404.php
+
+
+
+
+RewriteRule ^home?$ index.php 
+RewriteRule ^contact?$ views/pages/contact/contact.php
+RewriteRule ^review?$ views/pages/review/review.php
+RewriteRule ^privacy-policy?$ views/pages/privacy/privacy-policy.php
+
+RewriteRule ^([a-z0-9A-Z_-]+)/([a-z0-9A-Z_-]+)$ views/pages/service/service-details.php?category_name=$1&service_title=$2
+
+
+
+
+
+<IfModule mod_expires.c>
+ExpiresActive On
+
+# Images
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+# ExpiresByType image/webp "access plus 1 year"
+# ExpiresByType image/svg+xml "access plus 1 year"
+# ExpiresByType image/x-icon "access plus 1 year"
+
+# Video
+# ExpiresByType video/mp4 "access plus 1 year"
+# ExpiresByType video/mpeg "access plus 1 year"
+
+# CSS, JavaScript
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType text/javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+
+# Others
+# ExpiresByType application/pdf "access plus 1 month"
+# ExpiresByType application/x-shockwave-flash "access plus 1 month"
+
+</IfModule>
+
+
+Options All -Indexes
+# RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+# RewriteRule ^ /%1 [NC,L,R]
+
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^neatandhealthycleaning\.com$
+RewriteRule ^/?$ "https\:\/\/neatandhealthycleaning\.com\/" [R=301,L]
+
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

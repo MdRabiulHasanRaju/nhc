@@ -26,7 +26,7 @@
                             <p class="banner-one__text">Experience hassle-free, top-quality cleaning services designed
                                 to keep <br> your home or office spotless and stress-free.</p>
                             <div class="banner-one__btn-box">
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=971526503468" class="thm-btn">Book Now<span><i
+                                <a href="https://api.whatsapp.com/send?phone=<?=$wp_api_number;?>" class="thm-btn">Book Now<span><i
                                             class="icon-diagonal-arrow"></i></span></a>
                             </div>
                             <div class="banner-one__satisfied-partner">
@@ -34,19 +34,19 @@
                                     <li>
                                         <div class="banner-one__satisfied-partner-img">
                                             <img src="assets/images/resources/banner-one-satisfied-partner-1-1.jpg"
-                                                alt="">
+                                                alt="client-img">
                                         </div>
                                     </li>
                                     <li>
                                         <div class="banner-one__satisfied-partner-img">
                                             <img src="assets/images/resources/banner-one-satisfied-partner-1-2.jpg"
-                                                alt="">
+                                                alt="client-img">
                                         </div>
                                     </li>
                                     <li>
                                         <div class="banner-one__satisfied-partner-img">
                                             <img src="assets/images/resources/banner-one-satisfied-partner-1-3.jpg"
-                                                alt="">
+                                                alt="client-img">
                                         </div>
                                     </li>
                                 </ul>

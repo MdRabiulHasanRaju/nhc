@@ -3,7 +3,7 @@
             <div class="site-footer__shape-bg float-bob-y"
                 style="background-image: url(<?=LINK;?>assets/images/shapes/site-footer-shpae-bg.png);"></div>
             <div class="site-footer__shape-2 img-bounce">
-                <img src="<?=LINK;?>assets/images/shapes/site-footer-shape-2.png" alt="">
+                <img src="<?=LINK;?>assets/images/shapes/site-footer-shape-2.png" alt="logo">
             </div>
             <div class="container">
                 <div class="site-footer__inner">
@@ -14,7 +14,7 @@
                                     <div class="site-footer__logo-box">
                                         <div class="site-footer__logo">
                                             <a href="index.html"><img
-                                                    src="<?=LINK;?>assets/images/resources/site-footer-logo-1.png" alt=""></a>
+                                                    src="<?=LINK;?>assets/images/resources/site-footer-logo-1.png" alt="logo"></a>
                                         </div>
                                         <p class="site-footer__text-1">We are passionate about delivering exceptional cleaning services to create spotless, comfortable spaces for homes and
                                             businesses.</p>
@@ -27,7 +27,7 @@
                                                 </div>
                                                 <div class="site-footer__contact-info-content">
                                                     <p>Address:</p>
-                                                    <h5>Level 4, One JLT Tower 1 ,Jumeirah Lake Towers - Dubai</h5>
+                                                    <h5><?=$contact_result['address']?></h5>
                                                 </div>
                                             </li>
                                         </ul>
@@ -39,7 +39,7 @@
                                                 </div>
                                                 <div class="site-footer__contact-info-content">
                                                     <p>Email Address:</p>
-                                                    <h5><a href="mailto:info@nhccleaningandtechnical.com">info@nhccleaningandtechnical.com</a></h5>
+                                                    <h5><a href="mailto:<?=$contact_result['email']?>"><?=$contact_result['email']?></a></h5>
                                                 </div>
                                             </li>
                                             <li>
@@ -48,7 +48,7 @@
                                                 </div>
                                                 <div class="site-footer__contact-info-content">
                                                     <p>Phone Number:</p>
-                                                    <h5><a href="tel:+971526503468">+971 52 650 3468</a></h5>
+                                                    <h5><a href="tel:+<?=$wp_api_number?>"><?=$contact_result['number']?></a></h5>
                                                 </div>
                                             </li>
                                         </ul>
@@ -212,7 +212,7 @@
 
             <div class="logo-box">
                 <a href="<?=LINK;?>" aria-label="logo image"><img src="<?=LINK;?>assets/images/resources/logo-2.png" width="150"
-                        alt="" /></a>
+                        alt="logo-nhc" /></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
@@ -221,11 +221,11 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:info@NHCCleaningandTechnical.com">info@NHCCleaningandTechnical.com</a>
+                    <a href="mailto:<?=$contact_result['email']?>"><?=$contact_result['email']?></a>
                 </li>
                 <li>
                     <i class="fas fa-phone"></i>
-                    <a href="tel:+971526503468">+971 52 650 3468</a>
+                    <a href="tel:+<?=$wp_api_number;?>"><?=$contact_result['number']?></a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
