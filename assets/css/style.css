@@ -1275,14 +1275,16 @@ ul {
 .stricky-header .main-menu__list>li>ul>li>ul {
   position: absolute;
   top: 100%;
-  left: 0;
-  min-width: 270px;
+  left: -202px;
+  min-width: 567px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
+  /* flex-direction: column; */
   -webkit-box-pack: start;
   -ms-flex-pack: start;
+  flex-wrap: wrap;
+  display: flex;
   justify-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -1329,8 +1331,8 @@ ul {
 .stricky-header .main-menu__list>li>ul>li>ul>li {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  width: 100%;
+  flex: 1 1 50%;
+  /* width: 100%; */
   position: relative;
 }
 
