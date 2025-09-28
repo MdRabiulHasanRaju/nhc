@@ -262,6 +262,65 @@
         <span class="scroll-to-top__text"> Go Back Top</span>
     </a>
 
+    <style>
+  .floating-left, .floating-right {
+    position: fixed;
+    bottom: 20px;
+    z-index: 9999;
+  }
+  .floating-left { left: 20px; }
+  .floating-right { right: 20px; }
+
+  .floating-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366; /* Default green (for WhatsApp) */
+    box-shadow: 0 8px 20px rgba(16,24,40,0.12);
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .floating-btn a:active { transform: translateY(1px); }
+
+  .btn-call { background: #059669; }       /* Call button color */
+  .btn-ws   { background: #25D366; }       /* WhatsApp button color */
+
+  .floating-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: #fff;  /* White icons */
+  }
+</style>
+
+<!-- LEFT: Call button -->
+<div class="floating-right floating-btn">
+  <a class="btn-call" href="tel:+8801234567890" title="Call Us">
+    <!-- Phone Icon -->
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 
+               2 2 0 0 1 5 3h3a1 1 0 0 1 1 .75c.12.7.36 1.37.7 2
+               a1 1 0 0 1-.24 1l-1.2 1.2a16 16 0 0 0 6.9 6.9
+               l1.2-1.2a1 1 0 0 1 1-.24c.63.34 1.3.58 2 .7
+               A1 1 0 0 1 21 16v.92z"/>
+    </svg>
+  </a>
+</div>
+
+<!-- RIGHT: WhatsApp button -->
+<div class="floating-left floating-btn">
+  <a class="btn-ws" href="https://wa.me/8801234567890?text=Hello%20I%20need%20cleaning%20services"
+     target="_blank" rel="noopener" title="Chat on WhatsApp">
+    <!-- WhatsApp Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <path d="M16.027 3c-7.167 0-13 5.833-13 13 0 2.295.627 4.523 1.815 6.48L3 29l6.657-1.804A12.9 12.9 0 0 0 16.027 29c7.167 0 13-5.833 13-13s-5.833-13-13-13zm0 23.667a10.6 10.6 0 0 1-5.405-1.48l-.387-.23-3.953 1.072 1.057-3.906-.253-.401a10.6 10.6 0 0 1-1.64-5.722c0-5.873 4.753-10.627 10.627-10.627 2.84 0 5.509 1.107 7.516 3.115a10.59 10.59 0 0 1 3.111 7.512c0 5.873-4.753 10.667-10.673 10.667zm5.92-7.973c-.32-.16-1.893-.933-2.187-1.04-.293-.107-.507-.16-.72.16-.213.32-.827 1.04-1.013 1.253-.187.213-.373.24-.693.08-.32-.16-1.347-.497-2.566-1.573-.947-.84-1.587-1.88-1.773-2.2-.187-.32-.02-.493.14-.653.147-.147.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.72-1.76-.987-2.413-.26-.627-.52-.547-.72-.56-.187-.013-.4-.013-.613-.013a1.18 1.18 0 0 0-.853.4c-.293.32-1.12 1.093-1.12 2.667s1.147 3.093 1.307 3.307c.16.213 2.253 3.44 5.467 4.813.76.327 1.36.52 1.827.667.767.243 1.467.207 2.013.127.613-.093 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52-.08-.133-.293-.213-.613-.373z" fill="#fff"/>
+    </svg>
+  </a>
+
+</div>
+
 
     <script src="<?=LINK;?>assets/js/jquery-latest.js"></script>
     <script src="<?=LINK;?>assets/js/bootstrap.bundle.min.js"></script>
