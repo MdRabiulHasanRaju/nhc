@@ -75,7 +75,7 @@
                                     <p class="project-one__tag"><?=$cat_name;?><span
                                             class="icon-right-arrow"></span></p>
                                     <h3 class="project-one__title">
-                                        <a href="project-details.html">
+                                        <a href="<?=LINK;?><?=strtolower($category_name_link);?>/<?=strtolower($services_link);?>">
                                             <?=$featured_result['title'];?>
                                         </a>
                                     </h3>

@@ -271,18 +271,18 @@
   .floating-left { left: 20px; }
   .floating-right { right: 20px; }
 
-  .floating-btn a {
+.floating-btn a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #25D366; /* Default green (for WhatsApp) */
-    box-shadow: 0 8px 20px rgba(16,24,40,0.12);
+    background: #25D366;
+    box-shadow: 0 8px 20px rgb(16 24 40 / 38%);
     text-decoration: none;
     transition: transform .18s ease, box-shadow .18s ease;
-  }
+}
   .floating-btn a:active { transform: translateY(1px); }
 
   .btn-call { background: #059669; }       /* Call button color */

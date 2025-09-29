@@ -44,10 +44,10 @@
                                 <div class="services-one__img-box">
                                     <div class="services-one__img-shape-1"></div>
                                     <div class="services-one__img">
-                                        <img src="assets/images/services/services-one-img-1.jpg" alt="">
+                                        <img src="assets/images/services/services-one-img-1.jpg" alt="server-info-img">
                                     </div>
                                     <div class="services-one__img-2">
-                                        <img src="assets/images/services/services-one-img-2.jpg" alt="">
+                                        <img src="assets/images/services/services-one-img-2.jpg" alt="server-info-img">
                                     </div>
                                     <div class="services-one__experience-box">
                                         <div class="services-one__experience-icon">
@@ -71,13 +71,13 @@
                                                 <div class="services-one__count"></div>
                                                 <div class="services-one__content">
                                                     <h3 class="services-one__title"><a
-                                                            href="residential-cleaning.html">Deep Cleaning Services</a>
+                                                            href="<?=LINK;?>deep-cleaning/best-deep-cleaning-services">Deep Cleaning Services</a>
                                                     </h3>
                                                     <p class="services-one__text">Transform Your Space, Elevate Your Comfort – Experience the Ultimate Deep Clean!</p>
                                                 </div>
                                             </div>
                                             <div class="services-one__arrow">
-                                                <a href="residential-cleaning.html"><span
+                                                <a href="<?=LINK;?>deep-cleaning/best-deep-cleaning-services"><span
                                                         class="icon-diagonal-arrow"></span></a>
                                             </div>
                                         </div>
@@ -91,13 +91,13 @@
                                                 <div class="services-one__count"></div>
                                                 <div class="services-one__content">
                                                     <h3 class="services-one__title"><a
-                                                            href="residential-cleaning.html">Office Carpet Shampooing</a>
+                                                            href="<?=LINK;?>cleaning-services/office-carpet-shampooing">Office Carpet Shampooing</a>
                                                     </h3>
                                                     <p class="services-one__text">Revive your office carpets with our expert shampooing service. We remove....</p>
                                                 </div>
                                             </div>
                                             <div class="services-one__arrow">
-                                                <a href="residential-cleaning.html"><span
+                                                <a href="<?=LINK;?>cleaning-services/office-carpet-shampooing"><span
                                                         class="icon-diagonal-arrow"></span></a>
                                             </div>
                                         </div>
@@ -111,12 +111,12 @@
                                                 <div class="services-one__count"></div>
                                                 <div class="services-one__content">
                                                     <h3 class="services-one__title"><a
-                                                            href="commercial-cleaning.html">Post Construction Cleaning</a></h3>
+                                                            href="<?=LINK;?>cleaning-services/post-construction-cleaning">Post Construction Cleaning</a></h3>
                                                     <p class="services-one__text">Building Completed, Cleaning Commences: From Dust to....</p>
                                                 </div>
                                             </div>
                                             <div class="services-one__arrow">
-                                                <a href="commercial-cleaning.html"><span
+                                                <a href="<?=LINK;?>cleaning-services/post-construction-cleaning"><span
                                                         class="icon-diagonal-arrow"></span></a>
                                             </div>
                                         </div>
@@ -129,12 +129,12 @@
                                             <div class="services-one__count-and-content">
                                                 <div class="services-one__count"></div>
                                                 <div class="services-one__content">
-                                                    <h3 class="services-one__title"><a href="deep-cleaning.html">Upholstery Cleaning</a></h3>
+                                                    <h3 class="services-one__title"><a href="<?=LINK;?>cleaning-services/upholstery-cleaning">Upholstery Cleaning</a></h3>
                                                     <p class="services-one__text">Expert Upholstery Cleaning Services to Remove Stains, Dust, and Allergens....</p>
                                                 </div>
                                             </div>
                                             <div class="services-one__arrow">
-                                                <a href="deep-cleaning.html"><span
+                                                <a href="<?=LINK;?>cleaning-services/upholstery-cleaning"><span
                                                         class="icon-diagonal-arrow"></span></a>
                                             </div>
                                         </div>
@@ -148,12 +148,12 @@
                                                 <div class="services-one__count"></div>
                                                 <div class="services-one__content">
                                                     <h3 class="services-one__title"><a
-                                                            href="office-cleaning.html">Window Cleaning</a></h3>
+                                                            href="<?=LINK;?>cleaning-services/window-cleaning">Window Cleaning</a></h3>
                                                     <p class="services-one__text">Professional Window Cleaning Services for Homes and Offices – Streak-Free....</p>
                                                 </div>
                                             </div>
                                             <div class="services-one__arrow">
-                                                <a href="office-cleaning.html"><span
+                                                <a href="<?=LINK;?>cleaning-services/window-cleaning"><span
                                                         class="icon-diagonal-arrow"></span></a>
                                             </div>
                                         </div>
